@@ -196,7 +196,7 @@ img.icon {
 
 .row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap; /*puede que sobre esto, lo he estado desmarcando en el inspector y no cambiaba nada*/
   justify-content: space-around;
 }
 
@@ -286,10 +286,13 @@ img.icon {
   margin-top: 10px;
 }
 
-.box_photo img {
+/*.box_photo img {
   width: 100%;
   border-radius: 10px;
 }
+
+Habria que borrar esto, ya esta en la siguiente linea y falta mi huevo :P
+*/
 
 .box_photo img{
   width: 100%;
@@ -305,8 +308,8 @@ img.icon {
 
 .name{
   transform:translatey(-300px);
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;/* En el inspector de google esto viene tachado y al eliminarlo sigue funcionando bien. */
+  -moz-transition: all 500ms ease-in-out;/*Creo que es porque luego tenemos el hover pero no lo se, me lo vas a tener que explicar :P */
   -ms-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
   opacity: 0;
@@ -361,7 +364,7 @@ ul.social {
   margin: 0 auto;
   padding-top: 40px;
 }
-}
+}/*sobra*/
 
 /* APARTADO EVENTOS */
 
@@ -389,8 +392,8 @@ ul.social {
 }
 
 @media (min-width:768px){
-  .box_events2 {
-    width: 30%;
+  .box_events2 { 
+    width: 30%; /* Esto no cambia de un minimo a un maximo, no?*/
   }
 
   .event{
